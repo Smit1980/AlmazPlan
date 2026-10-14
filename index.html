@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="AlmazPlan — наверх"><span>ALMAZ</span><span>PLAN</span></a>
-      <nav aria-label="Разделы страницы"><a href="#idea">Идея</a><a href="#mechanic">Механика</a><a href="#roadmap">План</a></nav>
+      <nav aria-label="Разделы страницы"><a href="#idea">Идея</a><a href="#mechanic">Механика</a><a href="#board">Доска игры</a><a href="#roadmap">План</a></nav>
       <a class="header-link" href="https://drive.google.com/drive/folders/1YqOOoHH0xIDIaRwoHlPaixi5fuxLbT6V" target="_blank" rel="noopener noreferrer">Документы <span aria-hidden="true">↗</span></a>
     </div>
   </header>
@@ -28,7 +28,7 @@
         <h1 id="hero-title">Поступки<br>меняют мир.</h1>
         <p class="hero-lead">Сюжетная игра о том, как движение к своей цели начинается с внимания к другим.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#mechanic">Как это работает <span aria-hidden="true">↓</span></a>
+          <a class="button button-dark" href="#board">Как это работает <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="https://drive.google.com/drive/folders/1YqOOoHH0xIDIaRwoHlPaixi5fuxLbT6V" target="_blank" rel="noopener noreferrer">Папка проекта <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -62,8 +62,50 @@
         </div>
       </div>
     </section>
+    <section id="board" class="section board" aria-labelledby="board-title">
+      <div class="wrap">
+        <p class="eyebrow">03 / Рабочая доска игры</p>
+        <div class="board-intro"><h2 id="board-title">От поступка<br>к изменению мира.</h2><p>Рабочая схема первого эпизода: что делает игрок, что запоминает игра и что меняется позже. Это гипотеза для обсуждения, а не готовая сборка.</p></div>
+        <div class="board-legend"><span>□ Сцена</span><span>◆ Выбор</span><span>↝ Отложенный эффект</span><span>◌ Требует проверки</span></div>
+        <div class="board-panel">
+          <div class="board-panel-head"><div><p class="eyebrow">A / Карта эпизода</p><h3>«Дом, который начинается с других»</h3></div><p>7 сцен · 5 значимых выборов · 15–20 минут — предлагаемый объём для первого теста.</p></div>
+          <ol class="scene-map">
+            <li><span>S01 / Старт</span><h4>Пустой участок</h4><p>Цель героя — построить дом в пустыне.</p></li>
+            <li class="choice"><span>S02 / Выбор</span><h4>Гнездо птицы</h4><p>Помочь, запланировать помощь или пройти мимо.</p></li>
+            <li class="choice"><span>S03 / Выбор</span><h4>Крыша соседа</h4><p>Починить, собрать людей или забрать материал.</p></li>
+            <li class="choice"><span>S04 / Выбор</span><h4>Чужой успех</h4><p>Поздравить, честно выразить чувства или вернуться позже.</p></li>
+            <li class="choice"><span>S05 / Исправление</span><h4>Дорога</h4><p>Восстановить путь; вернуть взятое и завершить отложенную помощь.</p></li>
+            <li class="choice"><span>S06 / Осмысление</span><h4>Вечер</h4><p>Отметить поступок, исправление или обещание. Обещание не равно действию.</p></li>
+            <li class="final"><span>S07 / Итог</span><h4>Рассвет</h4><p>Дом и окружение показывают накопленные последствия. Три возможных состояния финала.</p></li>
+          </ol>
+          <div class="effects"><div><span>S02 · гнездо завершено</span><b>↝</b><span>S07 · основание дома</span></div><div><span>S03 · крыша восстановлена</span><b>↝</b><span>S07 · помощь со стенами</span></div><div><span>S04–S05 · связь и путь открыты</span><b>↝</b><span>S07 · крыша дома и оживающий мир</span></div></div>
+          <p class="board-note">Условия финалов здесь показаны как проектная модель. Их предстоит уточнить со сценаристом и проверить на игроках.</p>
+        </div>
+        <div class="board-columns">
+          <div class="board-panel">
+            <p class="eyebrow">B / Логика одного выбора</p><h3>Не «очки доброты», а последствия.</h3>
+            <ol class="decision-chain"><li><b>Игрок видит</b><span>Птице не хватает веток для гнезда.</span></li><li><b>Игрок решает</b><span>Помочь сейчас, вернуться позже или идти к своему участку.</span></li><li><b>Игра помнит</b><span>Реальный поступок отдельно от намерения и обещания.</span></li><li><b>Мир отвечает</b><span>Сначала реакцией птицы, позже — изменением участка и возможности строительства.</span></li></ol>
+          </div>
+          <div class="board-panel">
+            <p class="eyebrow">C / Эскиз экрана</p><h3>Что увидит игрок</h3>
+            <div class="wireframe" role="img" aria-label="Эскиз: цель героя, мир с птицей и участком, диалог и три варианта действия">
+              <div class="wire-head"><span>ЦЕЛЬ: ПОСТРОИТЬ ДОМ</span><span>ДЕНЬ 1</span></div>
+              <div class="wire-world"><div class="wire-sun"></div><span class="wire-bird">Птица: «Веток не хватает…»</span><span class="wire-plot">Участок героя</span></div>
+              <div class="wire-choices"><strong>Что сделает герой?</strong><span>Помочь с гнездом</span><span>Вернуться позже</span><span>Идти к участку</span></div>
+            </div>
+            <p class="board-note"><b>На экране:</b> цель, персонажи, реплики, выбор, отклик и перемены. <b>Внутри системы:</b> состояния действий, условия сцен и история исправлений.</p>
+          </div>
+        </div>
+        <div class="board-panel authoring">
+          <div><p class="eyebrow">D / Как описывать дальше</p><h3>Сначала карточка сцены.<br>Потом диалоги и рисунки.</h3><p>Для каждой из семи сцен заполнить одинаковую карточку. Это общий язык для сценариста, художника и будущей студии.</p></div>
+          <div><h4>Карточка S02 — гнездо птицы</h4><ol><li>Цель сцены и потребность персонажа.</li><li>Место, участники, что знает игрок.</li><li>Варианты действий и цена каждого выбора.</li><li>Мгновенный отклик: реплика, анимация, звук.</li><li>Записываемое состояние: сделано / обещано / пропущено.</li><li>Поздний эффект: где и как это увидит игрок.</li><li>Проверка: понятен ли выбор без лекции; можно ли исправить ошибку.</li></ol></div>
+        </div>
+        <div class="board-next"><strong>Что утвердить и написать следующим</strong><p>Возраст первой тестовой группы и цель героя → правила финалов → семь карточек сцен и переходы → два-три эскиза экранов → короткий интерактивный прототип → тест с игроками.</p></div>
+        <p class="board-sources">Формат доски вдохновлён практиками <a href="https://milanote.com/templates/game-design/game-design-document" target="_blank" rel="noopener noreferrer">визуального GDD</a>, <a href="https://articy.com/help/adx/UI_View_Flow.html" target="_blank" rel="noopener noreferrer">карты сюжетных развилок</a> и <a href="https://miro.com/templates/screen-flow/" target="_blank" rel="noopener noreferrer">схемы экранов</a>. Это источники подхода, не использованные в игре материалы.</p>
+      </div>
+    </section>
     <section class="section community wrap" aria-labelledby="community-title">
-      <p class="eyebrow">03 / Пространство для историй</p>
+      <p class="eyebrow">04 / Пространство для историй</p>
       <div class="intro-grid">
         <h2 id="community-title">Опыт людей<br>продолжает игру.</h2>
         <div class="intro-copy">
@@ -74,7 +116,7 @@
     </section>
     <section id="roadmap" class="section roadmap" aria-labelledby="roadmap-title">
       <div class="wrap">
-        <p class="eyebrow">04 / Путь проекта</p>
+        <p class="eyebrow">05 / Путь проекта</p>
         <h2 id="roadmap-title">Сначала проверить ядро.<br>Затем расширять мир.</h2>
         <div class="stages">
           <article><span>01</span><h3>Согласовать основу</h3><p>Аудитория, сценарий, права на используемые материалы и объём первой проверки.</p></article>
